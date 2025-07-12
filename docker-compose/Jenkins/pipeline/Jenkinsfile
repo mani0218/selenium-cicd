@@ -1,0 +1,27 @@
+pipeline{
+	agent 
+	{
+		docker
+		{
+			image "alpine"
+		}
+	}
+	environment
+	{
+		NUMBER=5
+	}
+	
+	stages
+	{
+		stage('stage 1')
+		{
+			steps
+			{
+				echo 'Hello World'
+				bat "wget www.google.com"
+				echo "number is ${NUMBER}"
+			}
+		}
+	}
+	
+}

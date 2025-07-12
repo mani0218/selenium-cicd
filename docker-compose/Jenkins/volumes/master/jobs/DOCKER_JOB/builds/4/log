@@ -1,0 +1,15 @@
+Started by user [8mha:////4EDVf8LFn9TQzkGDu5Z5iiU7ITr1ADprUQqpop50ar/8AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/dLi1CL9ovzk7NSi3MS8TABevWFgxQAAAA==[0mmanikandan
+Running as SYSTEM
+Building remotely on [8mha:////4Ah4IfiTbVlPeqgX3pIY1AErsdhCRL/YMZtISXP0shp9AAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgZp/eT83ILSktQi/eJUoPGZpbn5eSn5ydlAAQB4meuF0AAAAA==[0mseleniumondocker (mk) in workspace /selenium-docker/docker-compose/Jenkins/volumes/node/workspace/DOCKER_JOB
+[DOCKER_JOB] $ cmd /c call C:\Users\manik\AppData\Local\Temp\jenkins17747513486837906164.bat
+
+F:\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\DOCKER_JOB>docker images 
+REPOSITORY               TAG       IMAGE ID       CREATED        SIZE
+rockermani/runondocker   latest    069477864258   21 hours ago   310MB
+selenium/node-firefox    latest    b5877fd43459   2 days ago     3.05GB
+selenium/node-chrome     latest    dc5cf83e0a7d   2 days ago     3.16GB
+selenium/hub             latest    ce00c98b1ada   2 days ago     1.14GB
+jenkins/jenkins          lts       f4607803bd1e   2 weeks ago    796MB
+
+F:\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\DOCKER_JOB>exit 0 
+Finished: SUCCESS
