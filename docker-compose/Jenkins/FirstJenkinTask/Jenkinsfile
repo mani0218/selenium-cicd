@@ -1,0 +1,40 @@
+pipeline{
+	agent{
+		label 'mk'
+	}
+	environment
+	{
+		NAME='Manikandan'
+	}
+	
+	stages{
+		stage('just log hello world') 
+		{
+			steps
+			{
+				echo 'Hello World'
+			}
+		}
+		stage('Environment Block')
+		{
+			steps
+			{
+				echo "Welcome ${NAME} to jenkins project"
+			}
+		}
+		stage
+		{
+			steps
+			{
+				bat "ls"
+			}
+		}
+	}
+	post
+	{
+		success
+		{
+			echo 'loaded successfully'
+		}
+	}
+}

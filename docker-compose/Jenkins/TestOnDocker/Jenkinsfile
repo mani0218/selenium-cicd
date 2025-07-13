@@ -1,0 +1,61 @@
+pipeline
+{
+	agent
+	{
+		label 'FirstNode'
+	}
+	
+	stages
+	{
+		stage('Build Jar packages')
+		{
+			steps
+			{
+				dir('/Users/manik/selenium-docker')
+				{
+					bat 'mvn clean package -DskipTests'
+				}
+			}
+			
+		}
+		stage('Copy jar into lib')
+		{
+		    
+			steps
+			{
+				
+			    
+                dir('/Users/manik/selenium-docker/target/docker-resources')
+                {
+					bat 'copy selenium-docker.jar libs\\'
+					bat 'copy selenium-docker-tests.jar libs\\'
+					
+				}
+				
+			}
+		}
+		stage('Build Docker Images')
+		{
+			steps
+			{
+				dir('/Users/manik/selenium-docker')
+				{
+					bat 'docker build -t=rockermani/testonjenkins .'
+					bat 'docker run rockermani/testonjenkins'
+				}
+			}
+		}
+	}
+	post
+	{
+		success
+		{
+			echo ' Docker build Successfully'
+		}
+		failure
+		{
+			echo ' Docker not Build Properly'
+		}
+		
+	}
+}

@@ -1,0 +1,163 @@
+Started by user [8mha:////4GM/uXHb8jwgqhQ5aefJ760eg3U27Vl4Nn5Yv8y6xRLhAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/dLi1CL9ovzk7NSi3MS8TABevWFgxQAAAA==[0mmanikandan
+Running as SYSTEM
+Building remotely on [8mha:////4IthEujJY/iEN7IwF6jZ1kBcfJo6l4G7QeUNh2XlV8y3AAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZx/eT83ILSktQifa/UvOzMvGKnxOLMZH0AK0TkiMwAAAA=[0mJenkinsBasic (FirstNode) in workspace C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob
+[BasicJenkinsJob] $ cmd /c call C:\Users\manik\AppData\Local\Temp\jenkins9068363216057947158.bat
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>pipeline{
+'pipeline{' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>agent{
+'agent{' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>label 'mk' 
+Access Denied as you do not have sufficient privileges or
+the disk may be locked by another process.
+You have to invoke this utility running in elevated mode
+and make sure the disk is unlocked.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>}
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>environment
+'environment' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>{
+'{' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>NAME='Manikandan' 
+'NAME' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>}
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>stages{
+'stages{' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>stage('just log hello world')  
+'stage' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>{
+'{' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>steps
+'steps' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>{
+'{' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>echo 'Hello World' 
+'Hello World'
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>}
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>}
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>stage('Environment Block') 
+'stage' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>{
+'{' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>steps
+'steps' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>{
+'{' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>echo "Welcome ${NAME} to jenkins project" 
+"Welcome ${NAME} to jenkins project"
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>}
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>}
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>stage
+'stage' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>{
+'{' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>steps
+'steps' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>{
+'{' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>bat "ls" 
+'bat' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>}
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>}
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>}
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>post
+'post' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>{
+'{' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>success
+'success' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>{
+'{' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>echo 'loaded successfully' 
+'loaded successfully'
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>}
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>}
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>}
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\workspace\BasicJenkinsJob>exit 9009 
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

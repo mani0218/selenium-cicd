@@ -1,0 +1,10 @@
+Jul 13, 2025 12:34:41 PM hudson.remoting.Launcher createEngine
+INFO: Setting up agent: JenkinsBasic
+Jul 13, 2025 12:34:41 PM hudson.remoting.Engine startEngine
+INFO: Using Remoting version: 3301.v4363ddcca_4e7
+Jul 13, 2025 12:34:41 PM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\remoting as a remoting work directory
+Jul 13, 2025 12:34:42 PM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Jul 13, 2025 12:34:42 PM hudson.remoting.Launcher$CuiListener status
+INFO: Connected

@@ -1,0 +1,79 @@
+Jul 13, 2025 9:53:49 AM hudson.remoting.Launcher createEngine
+INFO: Setting up agent: JenkinsBasic
+Jul 13, 2025 9:53:49 AM hudson.remoting.Engine startEngine
+INFO: Using Remoting version: 3301.v4363ddcca_4e7
+Jul 13, 2025 9:53:49 AM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using C:\Users\manik\selenium-docker\docker-compose\Jenkins\volumes\node\remoting as a remoting work directory
+Jul 13, 2025 9:53:50 AM hudson.remoting.Launcher$CuiListener status
+INFO: WebSocket connection open
+Jul 13, 2025 9:53:50 AM hudson.remoting.Launcher$CuiListener status
+INFO: Connected
+Jul 13, 2025 10:50:46 AM hudson.remoting.Launcher$CuiListener status
+INFO: Read side closed
+Jul 13, 2025 10:50:46 AM hudson.remoting.Launcher$CuiListener status
+INFO: Terminated
+Jul 13, 2025 10:50:46 AM hudson.remoting.Launcher$CuiListener status
+INFO: Performing onReconnect operation.
+Jul 13, 2025 10:50:46 AM hudson.remoting.Launcher$CuiListener status
+INFO: onReconnect operation completed.
+Jul 13, 2025 10:50:46 AM hudson.remoting.Launcher$CuiListener status
+INFO: http://localhost:8080/login is not ready
+java.net.SocketException: Unexpected end of file from server
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:955)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:759)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:952)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:759)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1705)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1614)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531)
+	at hudson.remoting.Engine.pingSuccessful(Engine.java:852)
+	at hudson.remoting.Engine.lambda$runWebSocket$2(Engine.java:787)
+	at hudson.remoting.Engine.succeedsWithRetries(Engine.java:829)
+	at hudson.remoting.Engine.runWebSocket(Engine.java:787)
+	at hudson.remoting.Engine.run(Engine.java:542)
+
+Jul 13, 2025 10:50:46 AM hudson.remoting.Launcher$CuiListener status
+INFO: Waiting 1 second before retry
+Jul 13, 2025 10:50:47 AM hudson.remoting.Launcher$CuiListener status
+INFO: http://localhost:8080/login is not ready
+java.net.SocketException: Unexpected end of file from server
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:955)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:759)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:952)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:759)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1705)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1614)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531)
+	at hudson.remoting.Engine.pingSuccessful(Engine.java:852)
+	at hudson.remoting.Engine.lambda$runWebSocket$2(Engine.java:787)
+	at hudson.remoting.Engine.succeedsWithRetries(Engine.java:829)
+	at hudson.remoting.Engine.runWebSocket(Engine.java:787)
+	at hudson.remoting.Engine.run(Engine.java:542)
+
+Jul 13, 2025 10:50:47 AM hudson.remoting.Launcher$CuiListener status
+INFO: Waiting 3 seconds before retry
+Jul 13, 2025 10:50:50 AM hudson.remoting.Launcher$CuiListener status
+INFO: http://localhost:8080/login is not ready
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:589)
+	at java.base/sun.nio.ch.Net.connect(Net.java:578)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:948)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:759)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1705)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1614)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531)
+	at hudson.remoting.Engine.pingSuccessful(Engine.java:852)
+	at hudson.remoting.Engine.lambda$runWebSocket$2(Engine.java:787)
+	at hudson.remoting.Engine.succeedsWithRetries(Engine.java:829)
+	at hudson.remoting.Engine.runWebSocket(Engine.java:787)
+	at hudson.remoting.Engine.run(Engine.java:542)
+
+Jul 13, 2025 10:50:50 AM hudson.remoting.Launcher$CuiListener status
+INFO: Waiting 7 seconds before retry
