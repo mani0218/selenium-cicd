@@ -43,6 +43,16 @@ stage('Build Jar packages')
 				}
 			}
 		}
+		stage('push build images')
+		{
+			steps
+			{
+				dir('/Users/manik/selenium-docker')
+				{
+					bat 'docker push rockermani/testonjenkins'
+				}
+			}
+		}
 	}
 	post
 	{

@@ -19,7 +19,44 @@
   <jdks/>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
-  <clouds/>
+  <clouds>
+    <com.amazon.jenkins.ec2fleet.EC2FleetCloud plugin="ec2-fleet@3.2.0">
+      <name>AWS_DEMO</name>
+      <awsCredentialsId>Jenkins_To_AWS</awsCredentialsId>
+      <region>eu-north-1</region>
+      <endpoint></endpoint>
+      <fleet>sfr-69d05edd-74ee-4594-863d-88277a91fea5</fleet>
+      <fsRoot></fsRoot>
+      <computerConnector class="hudson.plugins.sshslaves.SSHConnector" plugin="ssh-slaves@3.1031.v72c6b_883b_869">
+        <port>22</port>
+        <credentialsId>JenkinsToOneAwsNode</credentialsId>
+        <launchTimeoutSeconds>60</launchTimeoutSeconds>
+        <maxNumRetries>10</maxNumRetries>
+        <retryWaitTime>15</retryWaitTime>
+        <sshHostKeyVerificationStrategy class="hudson.plugins.sshslaves.verifiers.KnownHostsFileKeyVerificationStrategy"/>
+        <tcpNoDelay>true</tcpNoDelay>
+      </computerConnector>
+      <privateIpUsed>false</privateIpUsed>
+      <alwaysReconnect>false</alwaysReconnect>
+      <labelString>ec2-fleet</labelString>
+      <idleMinutes>0</idleMinutes>
+      <minSize>1</minSize>
+      <maxSize>1</maxSize>
+      <minSpareSize>0</minSpareSize>
+      <numExecutors>1</numExecutors>
+      <addNodeOnlyIfRunning>false</addNodeOnlyIfRunning>
+      <restrictUsage>false</restrictUsage>
+      <scaleExecutorsByWeight>false</scaleExecutorsByWeight>
+      <executorScaler class="com.amazon.jenkins.ec2fleet.EC2FleetCloud$NoScaler">
+        <numExecutors>1</numExecutors>
+      </executorScaler>
+      <initOnlineTimeoutSec>180</initOnlineTimeoutSec>
+      <cloudStatusIntervalSec>10</cloudStatusIntervalSec>
+      <maxTotalUses>-1</maxTotalUses>
+      <disableTaskResubmit>false</disableTaskResubmit>
+      <noDelayProvision>false</noDelayProvision>
+    </com.amazon.jenkins.ec2fleet.EC2FleetCloud>
+  </clouds>
   <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
   <views>
     <hudson.model.AllView>

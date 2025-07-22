@@ -15,39 +15,10 @@
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@4151.v5406e29e3c90">
     <script>pipeline
 {
-	agent
-	{
-		label &apos;FirstNode&apos;
-	}
-	
-	stages
-	{
-stage(&apos;Build Jar packages&apos;)
-		{
-			steps
-			{
-				dir(&apos;/Users/manik/selenium-docker&apos;)
-				{
-					bat &apos;mvn clean package -DskipTests&apos;
-				}
-			}
-		}
-		stage(&apos;Copy jar into lib&apos;)
-		{
-		    
-			steps
-			{
-				
-			    
-                dir(&apos;/Users/manik/selenium-docker/target/docker-resources&apos;)
-                {
-					bat &apos;copy selenium-docker.jar libs\\&apos;
-					bat &apos;copy selenium-docker-tests.jar libs\\&apos;
-				}
-				
-			}
-		}
-		stage(&apos;Build Docker Images&apos;)
+    agent any
+    stages
+    {
+        stage(&apos;Build Docker Images&apos;)
 		{
 			steps
 			{
@@ -58,19 +29,24 @@ stage(&apos;Build Jar packages&apos;)
 				}
 			}
 		}
-	}
-	post
-	{
-		success
+		stage(&apos;push build images&apos;)
 		{
-			echo &apos; Docker build Successfully&apos;
+			steps
+			{
+				dir(&apos;/Users/manik/selenium-docker&apos;)
+				{
+					bat &apos;docker push rockermani/testonjenkins&apos;
+				}
+			}
 		}
-		failure
-		{
-			echo &apos; Docker not Build Properly&apos;
-		}
-		
-	}
+    }
+    post
+    {
+        success
+        {
+            echo &apos; pushed successfully&apos;
+        }
+    }
 }</script>
     <sandbox>true</sandbox>
   </definition>

@@ -1,10 +1,35 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <hudson.model.Queue_-State>
-  <items/>
+  <items>
+    <hudson.model.Queue_-BuildableItem>
+      <actions/>
+      <id>4</id>
+      <task class="org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution$PlaceholderTask">
+        <context class="org.jenkinsci.plugins.workflow.cps.CpsStepContext">
+          <executionRef class="org.jenkinsci.plugins.workflow.job.WorkflowRun$Owner">
+            <job>testOnJenkins</job>
+            <id>40</id>
+          </executionRef>
+          <id>3</id>
+          <bodyHeads/>
+          <body class="org.jenkinsci.plugins.workflow.cps.StaticBodyReference" resolves-to="org.jenkinsci.plugins.workflow.cps.HandleBodyReference">
+            <id>1</id>
+          </body>
+          <threadId>0</threadId>
+          <stepDescriptorId>org.jenkinsci.plugins.workflow.support.steps.ExecutorStep</stepDescriptorId>
+        </context>
+        <labelIsSelfLabel>false</labelIsSelfLabel>
+        <runId>testOnJenkins#40</runId>
+      </task>
+      <inQueueSince>1752746038916</inQueueSince>
+      <buildableStartMilliseconds>1752746038917</buildableStartMilliseconds>
+      <isPending>false</isPending>
+    </hudson.model.Queue_-BuildableItem>
+  </items>
   <properties>
     <entry>
       <string>jenkins.model.queue.QueueIdStrategy$DefaultStrategy</string>
-      <long>68</long>
+      <long>4</long>
     </entry>
   </properties>
 </hudson.model.Queue_-State>
